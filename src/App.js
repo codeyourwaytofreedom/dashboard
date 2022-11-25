@@ -1,3 +1,5 @@
+import "./App.css"
+import Animation from "./components/animation/animation";
 
 function App() {
   return (
