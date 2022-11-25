@@ -6,3 +6,20 @@ html, body {
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
+
+.App{
+    //border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0 40px;
+    height: 700px;
+}
+
+.Animation-comp{
+    border: 2px solid green;
+    display: grid;
+}
+
+.Panel-comp{
+    border: 2px solid purple;
+}

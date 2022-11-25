@@ -4,7 +4,9 @@
 
 const Animation = () => {
     return ( 
-        <div>Hello</div>
+        <div className="Animation-comp">
+            Animation
+        </div>
      );
 }
  
