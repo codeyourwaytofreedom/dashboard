@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
 }
 
 .App {
@@ -37,17 +38,75 @@ html, body {
   aspect-ratio: 3/2;
 }
 .Summary-comp #two, .Summary-comp #three {
-  aspect-ratio: 2/1;
+  aspect-ratio: 20/8;
 }
 
-@media (max-width: 991.98px) {
-  .Panel-comp {
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (max-width: 1350.98px) {
+  .Summary-comp #two, .Summary-comp #three {
+    aspect-ratio: 2/1;
   }
-  .Panel-comp_background {
-    border: 2px solid red;
+}
+@media (max-width: 991.98px) {
+  .Summary-comp {
+    border: 2px solid blue;
     display: grid;
-    height: 100vh;
+  }
+  .Summary-comp_cell {
+    border: 2px solid chartreuse;
+    width: 50vw;
+    aspect-ratio: 20/9;
+  }
+  .Summary-comp #two, .Summary-comp #three {
+    aspect-ratio: 2/1;
+    position: absolute;
+    bottom: 0;
+    color: white;
+  }
+  .Summary-comp #three {
+    right: 0.5vw;
+  }
+  .Summary-comp #two {
+    left: 0.5vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .Summary-comp {
+    border: 4px solid orangered;
+  }
+  .Summary-comp_cell {
+    width: 50vw;
+    aspect-ratio: 20/11;
+  }
+  .Summary-comp #two, .Summary-comp #three {
+    aspect-ratio: 2/1;
+    position: absolute;
+    bottom: 0;
+    color: white;
+  }
+  .Summary-comp #three {
+    right: 0;
+  }
+  .Summary-comp #two {
+    left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .Summary-comp {
+    border: 4px solid green;
+  }
+  .Summary-comp #two, .Summary-comp #three {
+    aspect-ratio: 20/15;
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    color: white;
+  }
+  .Summary-comp #three {
+    right: 0;
+    aspect-ratio: 20/15;
+  }
+  .Summary-comp #two {
+    left: 0;
+    aspect-ratio: 20/15;
   }
 }/*# sourceMappingURL=App.css.map */

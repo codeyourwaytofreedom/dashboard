@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
 }
 
 .App{
@@ -37,7 +38,7 @@ html, body {
         aspect-ratio: 3/2;
     }
     #two, #three {
-        aspect-ratio: 2/1;
+        aspect-ratio: 20/8;
     }
 }
 
@@ -46,28 +47,88 @@ html, body {
 
 
 
-
-
-@media (max-width: 575.98px) {
-
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-    
+// Custom 
+@media (max-width: 1350.98px) { 
+    .Summary-comp{
+        #two, #three {
+            aspect-ratio: 2/1;
+        }
+    }
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
-    .Panel-comp{
-        background-repeat: no-repeat;
-        background-size: cover;
-        &_background{
-            border:2px solid red;
-            display: grid;
-            height: 100vh;
+    .Summary-comp{
+        border: 2px solid blue;
+        display: grid;
+        &_cell{
+            border:2px solid chartreuse;
+            width: 50vw;
+            aspect-ratio: 20/9;
+            
+        }
+        #two, #three {
+            aspect-ratio: 2/1;
+            position: absolute;
+            bottom: 0;
+            color: white;
+        }
+        #three {
+            right: 0.5vw;
+        }
+        #two {
+            left: 0.5vw;
         }
     }
+}
 
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .Summary-comp{
+        border: 4px solid orangered;
+        &_cell{
+            width: 50vw;
+            aspect-ratio: 20/11;
+        }
+        #two, #three {
+            aspect-ratio: 2/1;
+            position: absolute;
+            bottom: 0;
+            color: white;
+        }
+        #three {
+            right: 0;
+        }
+        #two{
+            left: 0;
+        }
+
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .Summary-comp{
+        border: 4px solid green;
+        &_cell{
+        }
+        #two, #three {
+            aspect-ratio: 20/15;
+            position: absolute;
+            bottom: 0;
+            width: 50vw;
+            color: white;
+        }
+        #three {
+            right: 0;
+            aspect-ratio: 20/15;
+        }
+        #two {
+            left: 0;
+            aspect-ratio: 20/15;
+        }
+    }
 
 }
