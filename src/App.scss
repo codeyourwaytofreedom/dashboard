@@ -10,9 +10,7 @@ html, body {
 .App{
     //border: 2px solid red;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    padding: 0 40px;
-    height: 700px;
+    height: 100vh;
 }
 
 .Animation-comp{
@@ -21,5 +19,28 @@ html, body {
 }
 
 .Panel-comp{
-    border: 2px solid purple;
+    //border: 2px solid purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &_background{
+        border:2px solid red;
+        display: grid;
+        height: 100vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+
+}
+.Summary-comp{
+    border: 2px solid orange;
+    display: grid;
+    &_cell{
+        border:2px solid chartreuse;
+        width: 15vw;
+    }
 }
