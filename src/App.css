@@ -20,18 +20,12 @@ html, body {
 .Panel-comp {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .Panel-comp_background {
   border: 2px solid red;
   display: grid;
   height: 100vh;
-}
-.Panel-comp_background img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
 }
 
 .Summary-comp {
@@ -40,5 +34,20 @@ html, body {
 }
 .Summary-comp_cell {
   border: 2px solid chartreuse;
-  width: 15vw;
+  aspect-ratio: 3/2;
+}
+.Summary-comp #two, .Summary-comp #three {
+  aspect-ratio: 2/1;
+}
+
+@media (max-width: 991.98px) {
+  .Panel-comp {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Panel-comp_background {
+    border: 2px solid red;
+    display: grid;
+    height: 100vh;
+  }
 }/*# sourceMappingURL=App.css.map */

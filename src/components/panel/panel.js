@@ -1,13 +1,13 @@
 import Summary from "./summary/summary";
-import Animation from "../animation/animation";
-import Background from "./hotel.jpeg";
+import { useState, useEffect } from "react";
 
 
 const Panel = () => {
-    const image = require("./hotel.jpeg")
+    const image_horizontal = require("./hotel.jpeg")
+
+
     return ( 
-        <div className="Panel-comp" style={{backgroundImage: `url(${Background})`}}>
-            <img src="" alt="" />
+        <div className="Panel-comp" style={{backgroundImage:`url(${image_horizontal})`}}>
             <Summary/>
 
         </div>

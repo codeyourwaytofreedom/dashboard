@@ -22,25 +22,52 @@ html, body {
     //border: 2px solid purple;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     &_background{
         border:2px solid red;
         display: grid;
         height: 100vh;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-        }
     }
-
-
 }
 .Summary-comp{
     border: 2px solid orange;
     display: grid;
     &_cell{
         border:2px solid chartreuse;
-        width: 15vw;
+        aspect-ratio: 3/2;
     }
+    #two, #three {
+        aspect-ratio: 2/1;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .Panel-comp{
+        background-repeat: no-repeat;
+        background-size: cover;
+        &_background{
+            border:2px solid red;
+            display: grid;
+            height: 100vh;
+        }
+    }
+
+
 }
