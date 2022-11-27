@@ -196,7 +196,21 @@ html, body {
     color: turquoise;
 }
 
-
+.two_kernel, .four_kernel{
+    border: 3px solid yellow;
+    background-color: black;
+    border-radius: 50%;
+    width: 120px;
+    aspect-ratio: 1/1;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top:2vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: turquoise;
+}
 
 
 
@@ -216,11 +230,16 @@ html, body {
     .bubbles{
         border: 3px solid blue;
         .one_kernel, .five_kernel{
-            width: 185px;
+            width: 165px;
         }
         .three_kernel{
-            width: 200px;
+            width: 165px;
+            align-self: center;
         } 
+        .two_kernel, .four_kernel{
+            top:3vh;
+            align-self: start;
+        }
     }
  } 
  
@@ -234,6 +253,9 @@ html, body {
         .three_kernel{
             width: 150px;
         }
+        .two_kernel, .four_kernel{
+            position: absolute;
+        }
     }
  } 
  
@@ -241,12 +263,11 @@ html, body {
 @media (max-width: 575.98px) { 
     .bubbles{
         border: 3px solid green;
-        border: 3px solid red;
         .one_kernel, .five_kernel{
-            width: 150px;
+            width: 25vw;
         }
         .three_kernel{
-            width: 150px;
+            width: 30vw;
         }
     
     }

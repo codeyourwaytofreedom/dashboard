@@ -149,15 +149,36 @@ html, body {
   color: turquoise;
 }
 
+.two_kernel, .four_kernel {
+  border: 3px solid yellow;
+  background-color: black;
+  border-radius: 50%;
+  width: 120px;
+  aspect-ratio: 1/1;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  top: 2vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: turquoise;
+}
+
 @media (max-width: 991.98px) {
   .bubbles {
     border: 3px solid blue;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
-    width: 185px;
+    width: 165px;
   }
   .bubbles .three_kernel {
-    width: 200px;
+    width: 165px;
+    align-self: center;
+  }
+  .bubbles .two_kernel, .bubbles .four_kernel {
+    top: 3vh;
+    align-self: start;
   }
 }
 @media (max-width: 767.98px) {
@@ -170,16 +191,18 @@ html, body {
   .bubbles .three_kernel {
     width: 150px;
   }
+  .bubbles .two_kernel, .bubbles .four_kernel {
+    position: absolute;
+  }
 }
 @media (max-width: 575.98px) {
   .bubbles {
     border: 3px solid green;
-    border: 3px solid red;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
-    width: 150px;
+    width: 25vw;
   }
   .bubbles .three_kernel {
-    width: 150px;
+    width: 30vw;
   }
 }/*# sourceMappingURL=App.css.map */
