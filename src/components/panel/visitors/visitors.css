@@ -9,7 +9,9 @@
   top: -5vh;
 }
 .Visitors_comp_shell {
-  border: 2px solid orange;
+  border: 2px solid yellow;
+  background-color: black;
+  color: orange;
   border-radius: 50%;
   width: 150px;
   aspect-ratio: 1/1;
@@ -23,7 +25,7 @@
 
 @media (max-width: 991.98px) {
   .Visitors_comp {
-    border: 2px solid red;
+    border: 2px solid blue;
     display: grid;
     align-self: end;
     justify-self: center;
@@ -36,11 +38,17 @@
   }
 }
 @media (max-width: 767.98px) {
+  .Visitors_comp {
+    border: 2px solid red;
+  }
   .Visitors_comp_shell {
     width: 17vw;
   }
 }
 @media (max-width: 575.98px) {
+  .Visitors_comp {
+    border: 2px solid green;
+  }
   .Visitors_comp_shell {
     width: 19vw;
     top: 14vh;

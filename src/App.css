@@ -28,12 +28,14 @@ html, body {
 }
 
 .bubbles {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25fr 15fr 20fr 15fr 25fr;
+  border: 3px solid orange;
 }
 
 .Summary-comp {
   border: 2px solid orange;
-  width: 28vw;
+  width: 26vw;
   aspect-ratio: 1/1;
   display: grid;
   justify-content: center;
@@ -50,7 +52,7 @@ html, body {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 200px;
+  width: 175px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   top: 2vh;
@@ -107,5 +109,77 @@ html, body {
   }
   .Summary-comp #two {
     left: 0;
+  }
+}
+.one, .two, .three, .four, .five {
+  border: 3px solid red;
+  height: 350px;
+  display: grid;
+}
+
+.one_kernel, .five_kernel {
+  border: 3px solid yellow;
+  background-color: black;
+  border-radius: 50%;
+  width: 220px;
+  aspect-ratio: 1/1;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  top: 2vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: turquoise;
+}
+
+.three_kernel {
+  border: 3px solid yellow;
+  background-color: black;
+  border-radius: 50%;
+  width: 200px;
+  aspect-ratio: 1/1;
+  align-self: start;
+  justify-self: center;
+  position: relative;
+  top: 2vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: turquoise;
+}
+
+@media (max-width: 991.98px) {
+  .bubbles {
+    border: 3px solid blue;
+  }
+  .bubbles .one_kernel, .bubbles .five_kernel {
+    width: 185px;
+  }
+  .bubbles .three_kernel {
+    width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .bubbles {
+    border: 3px solid red;
+  }
+  .bubbles .one_kernel, .bubbles .five_kernel {
+    width: 150px;
+  }
+  .bubbles .three_kernel {
+    width: 150px;
+  }
+}
+@media (max-width: 575.98px) {
+  .bubbles {
+    border: 3px solid green;
+    border: 3px solid red;
+  }
+  .bubbles .one_kernel, .bubbles .five_kernel {
+    width: 150px;
+  }
+  .bubbles .three_kernel {
+    width: 150px;
   }
 }/*# sourceMappingURL=App.css.map */
