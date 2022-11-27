@@ -38,6 +38,7 @@ html, body {
   display: grid;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .Summary-comp_cell {
   border: 3px solid rgb(80, 50, 3);
@@ -100,6 +101,7 @@ html, body {
 @media (max-width: 575.98px) {
   .Summary-comp {
     border: 4px solid green;
+    left: 3vw;
   }
   .Summary-comp_cell {
     top: 1vh;

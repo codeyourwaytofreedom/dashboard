@@ -2,6 +2,7 @@ import Summary from "./summary/summary";
 import { useState, useEffect } from "react";
 import Visitors from "./visitors/visitors";
 import "./visitors/visitors.css";
+import Finance from "../finance/finance";
 
 
 const Panel = () => {
@@ -13,6 +14,7 @@ const Panel = () => {
             <div className="bubbles">
                 <Summary/>
                 <Visitors/>
+                <Finance/>
             </div>
             
 

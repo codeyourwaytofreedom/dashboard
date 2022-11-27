@@ -41,6 +41,7 @@ html, body {
     width: 28vw;
     aspect-ratio: 1/1;
     @include grid-center;
+    position: relative;
 
     &_cell{
         border:3px solid rgb(80, 50, 3);
@@ -135,6 +136,7 @@ html, body {
 
     .Summary-comp{
         border: 4px solid green;
+        left:3vw;
         &_cell{
             top:1vh;
             width: 26vw;

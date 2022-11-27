@@ -16,6 +16,9 @@
   display: grid;
   justify-self: end;
   align-self: end;
+  position: relative;
+  justify-content: center;
+  align-content: center;
 }
 
 @media (max-width: 991.98px) {
@@ -29,11 +32,18 @@
     top: 0;
   }
   .Visitors_comp_shell {
-    width: 15vw;
+    width: 120px;
   }
 }
 @media (max-width: 767.98px) {
   .Visitors_comp_shell {
     width: 17vw;
+  }
+}
+@media (max-width: 575.98px) {
+  .Visitors_comp_shell {
+    width: 19vw;
+    top: 14vh;
+    left: -20vw;
   }
 }/*# sourceMappingURL=visitors.css.map */

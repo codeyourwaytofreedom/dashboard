@@ -15,6 +15,9 @@
         display: grid;
         justify-self: end;
         align-self: end;
+        position: relative;
+        justify-content: center;
+        align-content: center;
     }
 }
 
@@ -32,7 +35,7 @@
         position: relative;
         top: 0;
         &_shell{
-            width: 15vw;
+            width: 120px;
         }
     }
 
@@ -50,6 +53,11 @@
 }
 
 @media (max-width: 575.98px) {
-
-
+    .Visitors_comp{
+        &_shell{
+            width: 19vw;
+            top: 14vh;
+            left: -20vw;
+        }
+    }
 }
