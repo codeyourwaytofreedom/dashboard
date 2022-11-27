@@ -38,6 +38,7 @@ html, body {
   display: grid;
   justify-content: center;
   align-items: center;
+  align-items: start;
   position: relative;
 }
 .Summary-comp_cell {
@@ -52,7 +53,7 @@ html, body {
   width: 200px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  top: -7vh;
+  top: 2vh;
 }
 .Summary-comp_cell_shell #top {
   display: grid;
@@ -67,11 +68,6 @@ html, body {
   -moz-column-gap: 5px;
        column-gap: 5px;
 }
-@media (max-width: 1350.98px) {
-  .Summary-comp_cell {
-    top: -3vh;
-  }
-}
 @media (max-width: 991.98px) {
   .Summary-comp {
     border: 2px solid blue;
@@ -79,7 +75,6 @@ html, body {
   .Summary-comp_cell {
     width: 20vw;
     font-size: 24px;
-    top: -1vh;
   }
 }
 @media (max-width: 767.98px) {
@@ -89,7 +84,6 @@ html, body {
   .Summary-comp_cell {
     width: 22vw;
     font-size: 18px;
-    top: 0;
   }
   .Summary-comp #three {
     right: 0;

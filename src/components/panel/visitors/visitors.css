@@ -1,5 +1,5 @@
 .Visitors_comp {
-  border: 2px solid red;
+  border: 3px solid orange;
   display: grid;
   align-self: center;
   justify-self: center;
@@ -14,7 +14,7 @@
   width: 150px;
   aspect-ratio: 1/1;
   display: grid;
-  justify-self: end;
+  justify-self: center;
   align-self: end;
   position: relative;
   justify-content: center;

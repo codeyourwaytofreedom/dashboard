@@ -1,5 +1,5 @@
 .Finance-comp {
-  border: 3px solid brown;
+  border: 3px solid orange;
   width: 15vw;
   display: grid;
 }
@@ -13,4 +13,48 @@
   margin-left: 30px;
   justify-content: center;
   align-content: center;
+  position: relative;
+  top: 2vh;
+}
+
+@media (max-width: 991.98px) {
+  .Finance-comp {
+    border: 3px solid blue;
+  }
+  .Finance-comp_kernel {
+    top: 4vh;
+    border: 3px solid yellow;
+    border-radius: 50%;
+    width: 175px;
+    aspect-ratio: 1/1;
+    display: grid;
+    justify-self: center;
+    margin-left: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .Finance-comp {
+    border: 3px solid red;
+  }
+  .Finance-comp_kernel {
+    width: 22vw;
+    top: 2vh;
+  }
+}
+@media (max-width: 575.98px) {
+  .Finance-comp {
+    border: 3px solid yellow;
+  }
+  .Finance-comp_kernel {
+    width: 125px;
+    top: 2vh;
+    left: -13vw;
+    display: grid;
+    justify-self: center;
+    margin-left: 30px;
+    justify-content: center;
+    align-content: center;
+  }
 }/*# sourceMappingURL=finance.css.map */
