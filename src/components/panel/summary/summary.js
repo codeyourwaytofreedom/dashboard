@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPercentage } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -11,54 +12,13 @@ const Summary = () => {
         <>
             <div className="Summary-comp">
                 <div className="Summary-comp_cell">
-                    <div style={{backgroundColor: "black", color: "orange", padding: "10px"}}>
-                        HELOO HOTEL
+                    <div className="Summary-comp_cell_shell">
+                            <div id="top">Occupancy Rate</div>
+                            <div id="bottom">89 <FontAwesomeIcon icon={faPercentage} size={"lg"} beat fade/></div>
                     </div>
+                        
+                       
                 </div>
-                <div className="Summary-comp_cell" id="two">CELL</div>
-                <div className="Summary-comp_cell" id="three">CELL</div>
-                <div className="Summary-comp_cell">CELL</div>
-
-                <div className="Summary-comp_details">
-                    <div className="Summary-comp_details_shell">
-                                Details go here...
-                    </div>
-                </div>
-                <div className="Summary-comp_cell">
-                    <div style={{backgroundColor: "black", color: "orange", padding: "10px"}}>
-                        HELOO HOTEL
-                    </div>
-                </div>
-                <div className="Summary-comp_cell" id="two">CELL</div>
-                <div className="Summary-comp_cell" id="three">CELL</div>
-                <div className="Summary-comp_cell">CELL</div>
-
-                <div className="Summary-comp_details">
-                    <div className="Summary-comp_details_shell">
-                                Details go here...
-                    </div>
-                </div>
-            </div>
-            <div className="Summary-comp">
-                <div className="Summary-comp_cell">
-                    <div style={{backgroundColor: "black", color: "orange", padding: "10px"}}>
-                        HELOO HOTEL
-                    </div>
-                </div>
-
-                <div className="Summary-comp_cell" id="two">CELL</div>
-                <div className="Summary-comp_cell" id="three">CELL</div>
-                <div className="Summary-comp_cell">CELL</div>
-                <div className="Summary-comp_cell">
-                    <div style={{backgroundColor: "black", color: "orange", padding: "10px"}}>
-                        HELOO HOTEL
-                    </div>
-                </div>
-
-                <div className="Summary-comp_cell" id="two">CELL</div>
-                <div className="Summary-comp_cell" id="three">CELL</div>
-                <div className="Summary-comp_cell">CELL</div>
-
 
             </div>
         </>
