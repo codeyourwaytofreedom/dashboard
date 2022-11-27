@@ -1,0 +1,55 @@
+.Visitors_comp{
+    border:2px solid red;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 15vw;
+    aspect-ratio: 1/1;
+    position: relative;
+    top: -5vh;
+    &_shell{
+        border:2px solid orange;
+        border-radius: 50%;
+        width: 150px;
+        aspect-ratio: 1/1;
+        display: grid;
+        justify-self: end;
+        align-self: end;
+    }
+}
+
+
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .Visitors_comp{
+        border:2px solid red;
+        display: grid;
+        align-self: end;
+        justify-self: center;
+        aspect-ratio: 1/1;
+        position: relative;
+        top: 0;
+        &_shell{
+            width: 15vw;
+        }
+    }
+
+}
+
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .Visitors_comp{
+        &_shell{
+            width: 17vw;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+
+
+}

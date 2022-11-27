@@ -1,5 +1,7 @@
 import Summary from "./summary/summary";
 import { useState, useEffect } from "react";
+import Visitors from "./visitors/visitors";
+import "./visitors/visitors.css";
 
 
 const Panel = () => {
@@ -8,7 +10,11 @@ const Panel = () => {
 
     return ( 
         <div className="Panel-comp" style={{backgroundImage:`url(${image_horizontal})`}}>
-            <Summary/>
+            <div className="bubbles">
+                <Summary/>
+                <Visitors/>
+            </div>
+            
 
         </div>
      );

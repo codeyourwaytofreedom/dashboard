@@ -26,10 +26,9 @@ html, body {
   background-size: cover;
   background-position: center;
 }
-.Panel-comp_background {
-  border: 2px solid red;
-  display: grid;
-  height: 100vh;
+
+.bubbles {
+  display: flex;
 }
 
 .Summary-comp {
@@ -104,7 +103,8 @@ html, body {
   }
   .Summary-comp_cell {
     top: 1vh;
-    width: 24vw;
+    width: 26vw;
+    font-size: 14px;
   }
   .Summary-comp #three {
     right: 0;
