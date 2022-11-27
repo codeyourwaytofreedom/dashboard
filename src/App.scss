@@ -37,6 +37,7 @@ html, body {
     display: grid;
     grid-template-columns: 25fr 15fr 20fr 15fr 25fr;
     border: 3px solid orange;
+    position: relative;
 
 }
 .Summary-comp{
@@ -81,15 +82,6 @@ html, body {
 
 
 
-// Custom 
-@media (max-width: 1350.98px) { 
-    .Summary-comp{
-        &_cell{
-        }
-        #two, #three {
-        }
-    }
-}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
@@ -228,16 +220,21 @@ html, body {
  // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
     .bubbles{
+        grid-template-columns: repeat(5,1fr);
         border: 3px solid blue;
         .one_kernel, .five_kernel{
-            width: 165px;
+            width: 19vw;
+            justify-self: center;
+            align-self: start;
         }
         .three_kernel{
-            width: 165px;
+            width: 19vw;
             align-self: center;
+            align-self: start;
         } 
         .two_kernel, .four_kernel{
-            top:3vh;
+            width: 19vw;
+            justify-self: center;
             align-self: start;
         }
     }

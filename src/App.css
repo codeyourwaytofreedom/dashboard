@@ -31,6 +31,7 @@ html, body {
   display: grid;
   grid-template-columns: 25fr 15fr 20fr 15fr 25fr;
   border: 3px solid orange;
+  position: relative;
 }
 
 .Summary-comp {
@@ -167,17 +168,22 @@ html, body {
 
 @media (max-width: 991.98px) {
   .bubbles {
+    grid-template-columns: repeat(5, 1fr);
     border: 3px solid blue;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
-    width: 165px;
+    width: 19vw;
+    justify-self: center;
+    align-self: start;
   }
   .bubbles .three_kernel {
-    width: 165px;
+    width: 19vw;
     align-self: center;
+    align-self: start;
   }
   .bubbles .two_kernel, .bubbles .four_kernel {
-    top: 3vh;
+    width: 19vw;
+    justify-self: center;
     align-self: start;
   }
 }
