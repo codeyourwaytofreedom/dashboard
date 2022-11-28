@@ -133,11 +133,24 @@ html, body {
     border: 3px solid green;
   }
   .bubbles .one, .bubbles .two, .bubbles .three, .bubbles .four, .bubbles .five {
-    width: 80px;
-    height: 80px;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
+    width: 19vw;
+    aspect-ratio: 1/1;
+  }
+  .bubbles .one {
+    position: relative;
+    left: 3vw;
+  }
+  .bubbles .five {
+    position: relative;
+    right: 3vw;
+  }
+  .bubbles .two {
+    position: relative;
+    left: 2vw;
+  }
+  .bubbles .four {
+    position: relative;
+    right: 2vw;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
     width: 60px;

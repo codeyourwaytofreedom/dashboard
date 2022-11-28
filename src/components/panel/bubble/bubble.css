@@ -38,12 +38,13 @@
 }
 @media (max-width: 575.98px) {
   .Bubble_comp {
+    width: 0;
     border: none;
   }
   .Bubble_comp .orange {
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    aspect-ratio: 1/1;
     top: -70px;
     display: grid;
     justify-content: center;
@@ -51,9 +52,16 @@
     background-color: black;
     border: 2px solid orange;
     border-radius: 50%;
+    font-size: 16px;
+  }
+  .Bubble_comp #down {
+    background-color: yellow;
   }
   .Bubble_comp .turq {
-    font-size: 13px;
-    top: 5px;
+    display: flex;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    font-size: 16px;
+    top: 0;
   }
 }/*# sourceMappingURL=bubble.css.map */

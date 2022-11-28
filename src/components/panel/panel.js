@@ -16,13 +16,13 @@ const Panel = () => {
                 </div>
                 <div className="two">
                     <div className="two_kernel">
-                        TWO
+                        <Bubble bubble_up={false}/>
                     </div>
                 </div>
                 <div className="three">
                     <div className="three_kernel">
-{/*                         <Bubble/>
- */}                    </div>
+                        <Bubble bubble_up={true}/>
+                   </div>
                 </div>
                 <div className="four">
                     <div className="four_kernel">
@@ -31,7 +31,7 @@ const Panel = () => {
                 </div>
                 <div className="five">
                     <div className="five_kernel">
-                        <Bubble/>
+                        <Bubble bubble_up={true}/>
                     </div>
                 </div>
             </div>

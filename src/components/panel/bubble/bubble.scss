@@ -61,10 +61,12 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
     .Bubble_comp{
+        width: 0;
        border:none;
         .orange{
             position: absolute;
-            width: 90px; height: 90px;
+            width: 80px; 
+            aspect-ratio: 1/1;
             top:-70px; 
             display: grid;
             justify-content: center;
@@ -72,10 +74,16 @@
             background-color: black;
             border: 2px solid orange;
             border-radius: 50%;
+            font-size: 16px;
+        }
+        #down{
+            background-color: yellow;
         }
         .turq{
-            font-size: 13px;
-            top:5px;
+            display: flex;
+            column-gap: 5px;
+            font-size: 16px;
+            top:0;
         }
     }
  }
