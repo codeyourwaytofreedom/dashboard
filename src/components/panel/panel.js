@@ -12,7 +12,7 @@ const Panel = () => {
                 <div className="one">
                     <div className="one_kernel">
                         <Finance/>
-                    </div>
+                   </div>
                 </div>
                 <div className="two">
                     <div className="two_kernel">
@@ -21,8 +21,8 @@ const Panel = () => {
                 </div>
                 <div className="three">
                     <div className="three_kernel">
-                        <Bubble/>
-                    </div>
+{/*                         <Bubble/>
+ */}                    </div>
                 </div>
                 <div className="four">
                     <div className="four_kernel">
@@ -34,11 +34,6 @@ const Panel = () => {
                         <Bubble/>
                     </div>
                 </div>
-{/*                 <Summary/>
-                <Visitors/>
-                <Finance/>
-                <Visitors/>
-                <Summary/> */}
             </div>
             
 

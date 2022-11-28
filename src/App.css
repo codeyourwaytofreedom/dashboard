@@ -129,16 +129,32 @@ html, body {
 @media (max-width: 575.98px) {
   .bubbles {
     top: 13vh;
+    height: 100px;
     border: 3px solid green;
   }
+  .bubbles .one, .bubbles .two, .bubbles .three, .bubbles .four, .bubbles .five {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
   .bubbles .one_kernel, .bubbles .five_kernel {
-    width: 14vw;
+    width: 60px;
+    border: 2px solid white;
+    top: 0;
+    position: relative;
   }
   .bubbles .three_kernel {
-    width: 14vw;
+    width: 60px;
+    border: 2px solid white;
+    top: 0;
+    position: relative;
   }
   .bubbles .two_kernel, .bubbles .four_kernel {
+    width: 60px;
+    border: 2px solid white;
+    top: 0;
     position: relative;
-    width: 14vw;
   }
 }/*# sourceMappingURL=App.css.map */
