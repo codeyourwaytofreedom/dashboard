@@ -126,18 +126,17 @@ html, body {
  // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
     .bubbles{
-        top:8vh;
-        left:-2vw;
+        top:13vh;
         border: 3px solid green;
         .one_kernel, .five_kernel{
-            width: 19vw;
+            width: 14vw;
         }
         .three_kernel{
-            width: 19vw;
+            width: 14vw;
         }
         .two_kernel, .four_kernel{
             position: relative;
-            width: 19vw;
+            width: 14vw;
         }
     
     }

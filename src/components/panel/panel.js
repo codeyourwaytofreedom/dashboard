@@ -1,4 +1,5 @@
-import Overview from "./overview/overview";
+import Finance from "../finance/finance";
+import Bubble from "./bubble/bubble";
 
 
 const Panel = () => {
@@ -10,7 +11,7 @@ const Panel = () => {
             <div className="bubbles">
                 <div className="one">
                     <div className="one_kernel">
-                        ONE
+                        <Finance/>
                     </div>
                 </div>
                 <div className="two">
@@ -20,7 +21,7 @@ const Panel = () => {
                 </div>
                 <div className="three">
                     <div className="three_kernel">
-                        <Overview/>
+                        <Bubble/>
                     </div>
                 </div>
                 <div className="four">
@@ -30,7 +31,7 @@ const Panel = () => {
                 </div>
                 <div className="five">
                     <div className="five_kernel">
-                        FIVE
+                        <Bubble/>
                     </div>
                 </div>
 {/*                 <Summary/>

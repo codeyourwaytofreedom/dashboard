@@ -1,11 +1,11 @@
-.Overview_comp {
+.Bubble_comp {
   border: 2px solid pink;
   display: grid;
   justify-content: center;
   justify-items: center;
   width: 200px;
 }
-.Overview_comp span {
+.Bubble_comp span {
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -13,37 +13,38 @@
   position: relative;
   font-size: 27px;
 }
-.Overview_comp .orange {
+.Bubble_comp .orange {
   color: orange;
   top: 10px;
 }
 @media (max-width: 991.98px) {
-  .Overview_comp span {
+  .Bubble_comp span {
     font-size: 21px;
   }
 }
 @media (max-width: 767.98px) {
-  .Overview_comp {
+  .Bubble_comp {
     width: 100px;
   }
-  .Overview_comp .orange {
+  .Bubble_comp .orange {
     top: 5px;
     text-align: center;
     font-size: 18px;
   }
-  .Overview_comp .turq {
+  .Bubble_comp .turq {
     font-size: 18px;
     top: -5px;
   }
 }
 @media (max-width: 575.98px) {
-  .Overview_comp {
-    width: 19vw;
+  .Bubble_comp {
     position: absolute;
+    width: 14vw;
+    top: 0;
   }
-  .Overview_comp .orange {
+  .Bubble_comp .orange {
     font-size: 14px;
-    top: -8vh;
+    top: -10vh;
     text-align: center;
     background-color: black;
     border: 2px solid orange;
@@ -53,8 +54,9 @@
     display: grid;
     align-items: center;
   }
-  .Overview_comp .turq {
+  .Bubble_comp .turq {
     font-size: 13px;
-    top: -8vh;
+    top: -10vh;
+    border: 3px solid white;
   }
-}/*# sourceMappingURL=overview.css.map */
+}/*# sourceMappingURL=bubble.css.map */
