@@ -1,3 +1,4 @@
+import Overview from "./overview/overview";
 
 
 const Panel = () => {
@@ -19,7 +20,7 @@ const Panel = () => {
                 </div>
                 <div className="three">
                     <div className="three_kernel">
-                        THREE
+                        <Overview/>
                     </div>
                 </div>
                 <div className="four">

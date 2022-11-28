@@ -128,6 +128,8 @@ html, body {
 }
 @media (max-width: 575.98px) {
   .bubbles {
+    top: 8vh;
+    left: -2vw;
     border: 3px solid green;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
