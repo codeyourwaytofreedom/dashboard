@@ -1,5 +1,5 @@
 .Bubble_comp{
-    border:2px solid pink;
+    //border:2px solid pink;
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -27,16 +27,10 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
     .Bubble_comp{
+        width: 145px;
         span{
             font-size: 21px;
         }
-        .orange{
-
-        }
-        .turq{
-
-        }
-    
     }
 
 
@@ -77,7 +71,17 @@
             font-size: 16px;
         }
         #down{
-            background-color: yellow;
+            position: absolute;
+            width: 80px; 
+            aspect-ratio: 1/1;
+            top:43px; 
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: black;
+            border: 2px solid orange;
+            border-radius: 50%;
+            font-size: 16px;
         }
         .turq{
             display: flex;

@@ -30,18 +30,16 @@ html, body {
 .bubbles {
   display: grid;
   grid-template-columns: 25fr 15fr 20fr 15fr 25fr;
-  border: 3px solid orange;
   position: relative;
 }
 
 .one, .two, .three, .four, .five {
-  border: 3px solid red;
   height: 350px;
   display: grid;
 }
 
 .one_kernel, .five_kernel {
-  border: 3px solid orange;
+  border: 3px solid rgb(155, 105, 12);
   background-color: black;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -57,7 +55,7 @@ html, body {
 }
 
 .three_kernel {
-  border: 3px solid orange;
+  border: 3px solid rgb(155, 105, 12);
   background-color: black;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -74,7 +72,7 @@ html, body {
 }
 
 .two_kernel, .four_kernel {
-  border: 3px solid orange;
+  border: 3px solid rgb(155, 105, 12);
   background-color: black;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -92,7 +90,6 @@ html, body {
 @media (max-width: 991.98px) {
   .bubbles {
     grid-template-columns: repeat(5, 1fr);
-    border: 3px solid blue;
     top: 3vh;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
@@ -112,9 +109,6 @@ html, body {
   }
 }
 @media (max-width: 767.98px) {
-  .bubbles {
-    border: 3px solid red;
-  }
   .bubbles .one_kernel, .bubbles .five_kernel {
     width: 120px;
   }
@@ -130,7 +124,6 @@ html, body {
   .bubbles {
     top: 13vh;
     height: 100px;
-    border: 3px solid green;
   }
   .bubbles .one, .bubbles .two, .bubbles .three, .bubbles .four, .bubbles .five {
     width: 19vw;
@@ -153,20 +146,17 @@ html, body {
     right: 2vw;
   }
   .bubbles .one_kernel, .bubbles .five_kernel {
-    width: 60px;
-    border: 2px solid white;
+    width: 55px;
     top: 0;
     position: relative;
   }
   .bubbles .three_kernel {
-    width: 60px;
-    border: 2px solid white;
+    width: 55px;
     top: 0;
     position: relative;
   }
   .bubbles .two_kernel, .bubbles .four_kernel {
-    width: 60px;
-    border: 2px solid white;
+    width: 55px;
     top: 0;
     position: relative;
   }

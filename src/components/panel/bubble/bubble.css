@@ -1,5 +1,4 @@
 .Bubble_comp {
-  border: 2px solid pink;
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -18,6 +17,9 @@
   top: 10px;
 }
 @media (max-width: 991.98px) {
+  .Bubble_comp {
+    width: 145px;
+  }
   .Bubble_comp span {
     font-size: 21px;
   }
@@ -55,7 +57,17 @@
     font-size: 16px;
   }
   .Bubble_comp #down {
-    background-color: yellow;
+    position: absolute;
+    width: 80px;
+    aspect-ratio: 1/1;
+    top: 43px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    border: 2px solid orange;
+    border-radius: 50%;
+    font-size: 16px;
   }
   .Bubble_comp .turq {
     display: flex;
