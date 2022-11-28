@@ -3,6 +3,7 @@
   justify-content: center;
   justify-items: center;
   width: 200px;
+  cursor: pointer;
 }
 .Bubble_comp span {
   align-items: center;

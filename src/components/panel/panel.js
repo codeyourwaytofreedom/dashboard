@@ -1,7 +1,7 @@
-import Finance from "../finance/finance";
 import Bubble from "./bubble/bubble";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLuggageCart, faMap, faMapMarked, faMoneyBill1Wave, faPeopleGroup, faPercent } from '@fortawesome/free-solid-svg-icons';
+import Details from "../details/details";
 
 const Panel = () => {
     const image_horizontal = require("./hotel.jpeg")
@@ -46,13 +46,12 @@ const Panel = () => {
                     <div className="five_kernel">
                         <Bubble 
                             title = {<span className="orange" id="up">Facilities</span>}
-                            title_detail = {<span className="turq"><FontAwesomeIcon icon={faMapMarked} size={"lg"} color={"silver"} beatFade/> </span>}                        
+                            title_detail = {<span className="turq"><FontAwesomeIcon icon={faMapMarked} size={"lg"} color={"turquoise"} beatFade/> </span>}                        
                         />
                     </div>
                 </div>
             </div>
-            
-
+            <Details/>
         </div>
      );
 }
