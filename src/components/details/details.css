@@ -54,6 +54,7 @@
 .details_kernel .gauges {
   position: absolute;
   display: flex;
+  justify-self: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
@@ -65,7 +66,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 3px solid salmon;
+  border: 3px solid orange;
+  border-radius: 50%;
 }
 .details_kernel .gauges .gauge .data {
   display: grid;
@@ -107,6 +109,40 @@
   left: 18px;
   top: -14px;
   transform: rotate(-9deg);
+}
+.details_kernel .occupancyrate {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  position: absolute;
+  justify-self: center;
+}
+.details_kernel .occupancyrate .explain {
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+.details_kernel .occupancyrate .singlerooms, .details_kernel .occupancyrate .doublerooms {
+  background-color: gold;
+  opacity: 0.9;
+  display: grid;
+  padding: 20px;
+  border-radius: 30px;
+  row-gap: 10px;
+  position: relative;
+}
+.details_kernel .occupancyrate .singlerooms .beds, .details_kernel .occupancyrate .doublerooms .beds {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.details_kernel .occupancyrate .singlerooms .beds .bed, .details_kernel .occupancyrate .doublerooms .beds .bed {
+  display: grid;
+  justify-content: center;
 }
 
 @media (max-width: 767.98px) {

@@ -54,6 +54,7 @@
         .gauges{
             position: absolute;
             display: flex;
+            justify-self: center;
             column-gap: 10px;
             .gauge{
                     width: 180px;
@@ -63,7 +64,8 @@
                     display: grid;
                     justify-content: center;
                     align-items: center;
-                    border: 3px solid salmon;
+                    border: 3px solid orange;
+                    border-radius: 50%;
                     .data{
                         display: grid;
                         justify-self: center;
@@ -102,6 +104,38 @@
                         top:-14px;
                         transform: rotate(-9deg);
                     }
+            }
+        }
+        .occupancyrate{
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            position: absolute;
+            justify-self: center;
+            .explain{
+                border-bottom: 2px solid black;
+                width: 100%;
+                padding-bottom: 5px;
+                font-size: 18px;
+            }
+            .singlerooms, .doublerooms {
+                background-color: gold;
+                opacity: 0.9;
+                display: grid;
+                padding: 20px;
+                border-radius: 30px;
+                row-gap: 10px;
+                position: relative;
+                .beds{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 10px;
+                    .bed{
+                        display: grid;
+                        justify-content: center;
+                    }
+                }
             }
         }
     }
