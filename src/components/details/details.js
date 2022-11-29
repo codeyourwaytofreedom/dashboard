@@ -1,14 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneFlip, faBedPulse, faBed} from '@fortawesome/free-solid-svg-icons';
 
 import "./details.css";
 import Cell from './cell';
-const Details = () => {
+import PercentageVisual from './percentagevisual';
+const Details = ({details}) => {
     const gag = require("./gauge.png")
+
     return ( 
         <div className="details"> 
             <div className="details_kernel">
-
+                { details === "finance" && 
+                    <>
                     <Cell 
                         title={<span style={{color:"darkgreen"}}>Turnover</span>}
                         content={
@@ -51,31 +54,56 @@ const Details = () => {
                             </div>
                         }
                     />
+                    </>
+                }
+
+                {
+                    details === "visitors" &&
 
                     <div className='gauges'>
                         <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
                             <img src={require("./needle.png")} alt="needle" id='gauge1' />
                             <div className='data'>
-                                    <span style={{color:"crimson"}}>Russians</span>
+                                    <span style={{color:"crimson"}}>Russian</span>
                                     <span style={{color:"yellow"}}>7.865</span>                                
                             </div>
                         </div>
                         <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
                             <img src={require("./needle.png")} alt="needle" id='gauge2' />
                             <div className='data'>
-                                    <span style={{color:"crimson"}}>Russians</span>
-                                    <span style={{color:"yellow"}}>7.865</span>                                
+                                    <span style={{color:"crimson"}}>Dutch</span>
+                                    <span style={{color:"yellow"}}>7.312</span>                                
                             </div>
                         </div>
                         <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
                             <img src={require("./needle.png")} alt="needle" id='gauge3' />
                             <div className='data'>
-                                    <span style={{color:"crimson"}}>Russians</span>
-                                    <span style={{color:"yellow"}}>7.865</span>                                
+                                    <span style={{color:"crimson"}}>British</span>
+                                    <span style={{color:"yellow"}}>6.990</span>                                
                             </div>
                         </div>
                     </div>
+                }
 
+                {
+                    details ==="occupancyrate" &&
+
+                    <PercentageVisual
+                        icon_active = {faBedPulse}
+                        icon_idle = {faBed}
+                        color_active = {"red"}
+                        color_idle = {"green"}
+                        percentage1 = {75}
+                        title={"75% of single rooms occupied"}
+                        second_col={true}
+                        second_icon_active = {faBedPulse}
+                        second_icon_idle = {faBed}
+                        second_color_active = {"red"}
+                        second_color_idle = {"green"}
+                        percentage2={40}
+                        second_title={"40% of single rooms occupied"}
+                    />
+                }
                     
             </div>
         </div>
