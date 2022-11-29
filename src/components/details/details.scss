@@ -51,6 +51,31 @@
                 }
             }
         }
+        .gauges{
+            position: absolute;
+            display: flex;
+            column-gap: 20px;
+            .gauge{
+                    width: 180px;
+                    aspect-ratio: 1/1;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    border: 3px solid salmon;
+                    img{
+                        width: 55px;
+                        height: 55px;
+                        object-fit: contain;
+                        position: relative;
+                        left: 18px;
+                        top:-14px;
+                        transform: rotate(-9deg);
+                        //border: 2px solid red;
+                    }
+            }
+        }
     }
 }
 

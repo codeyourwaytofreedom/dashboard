@@ -1,15 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
-import { Chart } from "react-google-charts";
 
 import "./details.css";
 import Cell from './cell';
 const Details = () => {
-     const data = [
-        ["Element", "Density", { role: "style" }],
-        ["Copper", 8.94, "#b87333"], // RGB value
-        ["Silver", 10.49, "silver"], // English color name
-      ];
+    const gag = require("./gauge.png")
     return ( 
         <div className="details"> 
             <div className="details_kernel">
@@ -25,9 +20,6 @@ const Details = () => {
                         }
                     />
 
-
-
-
                     <Cell 
                         title={<span style={{color:"crimson"}}>Last 3 Years</span>}
                         content={
@@ -42,31 +34,34 @@ const Details = () => {
                                         <span style={{width:"75%", height:"30px", backgroundColor:"black",
                                             textAlign:"start", color:"white", paddingLeft:"10px", opacity:"1", borderBottomRightRadius:"10px"}}>2022</span>
                                     </div>
-                            
                         }
                     />
 
-
-
-
-                    <div className="details_kernel_cell">
-                        <div className='details_kernel_cell_title'>Quick Calls</div>
-                        <div className='details_kernel_cell_content'>
-                            <span id='icon'>
+                    <Cell 
+                        title={<span style={{color:"darkgreen"}}>Quick Calls</span>}
+                        content={
+                            <div>
+                                <span id='icon'>
                                 <FontAwesomeIcon icon={faPhoneFlip} rotation={270} size={"xl"} color={"#ff7b25"}/>
                             </span>
                             <div id='number'>
                                 <span>+(90)-553-458-37-41</span>
                                 <span style={{color:"#ff7b25"}}>Chief of department</span>
                             </div>
+                            </div>
+                        }
+                    />
+
+                    <div className='gauges'>
+                        <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
+                            <img src={require("./needle.png")} alt="" />
+                        </div>
+                        <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
+                        </div>
+                        <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
                         </div>
                     </div>
 
-
-                    <div>Two</div>
-                    <div>Three</div>
-                    <div>Four</div>
-                    <div>Five</div>
                     
             </div>
         </div>
