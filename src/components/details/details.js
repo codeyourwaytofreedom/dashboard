@@ -54,11 +54,25 @@ const Details = () => {
 
                     <div className='gauges'>
                         <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
-                            <img src={require("./needle.png")} alt="" />
+                            <img src={require("./needle.png")} alt="needle" id='gauge1' />
+                            <div className='data'>
+                                    <span style={{color:"crimson"}}>Russians</span>
+                                    <span style={{color:"yellow"}}>7.865</span>                                
+                            </div>
                         </div>
                         <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
+                            <img src={require("./needle.png")} alt="needle" id='gauge2' />
+                            <div className='data'>
+                                    <span style={{color:"crimson"}}>Russians</span>
+                                    <span style={{color:"yellow"}}>7.865</span>                                
+                            </div>
                         </div>
                         <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
+                            <img src={require("./needle.png")} alt="needle" id='gauge3' />
+                            <div className='data'>
+                                    <span style={{color:"crimson"}}>Russians</span>
+                                    <span style={{color:"yellow"}}>7.865</span>                                
+                            </div>
                         </div>
                     </div>
 

@@ -54,7 +54,7 @@
         .gauges{
             position: absolute;
             display: flex;
-            column-gap: 20px;
+            column-gap: 10px;
             .gauge{
                     width: 180px;
                     aspect-ratio: 1/1;
@@ -64,7 +64,36 @@
                     justify-content: center;
                     align-items: center;
                     border: 3px solid salmon;
-                    img{
+                    .data{
+                        display: grid;
+                        justify-self: center;
+                        align-self: end;
+                        position: absolute;
+                        bottom: 20px;
+                        span{
+                            text-align: center;
+                            font-size: larger;
+                        }
+                    }
+                    #gauge1{
+                        width: 55px;
+                        height: 55px;
+                        object-fit: contain;
+                        position: relative;
+                        left: 20px;
+                        top:5px;
+                        transform: rotate(55deg);
+                    }
+                    #gauge2{
+                        width: 55px;
+                        height: 55px;
+                        object-fit: contain;
+                        position: relative;
+                        left: 20px;
+                        top:-2px;
+                        transform: rotate(20deg);
+                    }
+                    #gauge3{
                         width: 55px;
                         height: 55px;
                         object-fit: contain;
@@ -72,7 +101,6 @@
                         left: 18px;
                         top:-14px;
                         transform: rotate(-9deg);
-                        //border: 2px solid red;
                     }
             }
         }
