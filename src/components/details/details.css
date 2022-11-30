@@ -161,7 +161,27 @@
     aspect-ratio: 4/3;
     gap: 0;
   }
-  .details_kernel div {
+  .details_kernel_cell {
     width: 32vw;
+  }
+  .details_kernel .occupancyrate {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  .details_kernel .occupancyrate .explain {
+    font-size: 15px;
+  }
+  .details_kernel .occupancyrate .singlerooms, .details_kernel .occupancyrate .doublerooms {
+    width: 48vw;
+  }
+  .details_kernel .occupancyrate .singlerooms .beds, .details_kernel .occupancyrate .doublerooms .beds {
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+  }
+  .details_kernel .occupancyrate .singlerooms .beds .bed, .details_kernel .occupancyrate .doublerooms .beds .bed {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=details.css.map */

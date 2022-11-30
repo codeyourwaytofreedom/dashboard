@@ -171,8 +171,26 @@
             width: 99vw;
             aspect-ratio: 4/3;
             gap: 0;
-            div{
+            &_cell{
                 width: 32vw;
+            }
+            .occupancyrate{
+                width: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 5px;
+                .explain{
+                    font-size: 15px;
+                }
+                .singlerooms, .doublerooms {
+                    width: 48vw;
+                    .beds{
+                        column-gap: 3px;
+                        .bed{
+                            font-size: 10px;
+                        }
+                    }
+                }
             }
         }
     }
