@@ -49,7 +49,7 @@ const Details = ({details}) => {
                                 <FontAwesomeIcon icon={faPhoneFlip} rotation={270} size={"xl"} color={"#ff7b25"}/>
                             </span>
                             <div id='number'>
-                                <span>+(90)-553-458-37-41</span>
+                                <span>+(90)-553-000-00-00</span>
                                 <span style={{color:"#ff7b25"}}>Chief of department</span>
                             </div>
                             </div>
