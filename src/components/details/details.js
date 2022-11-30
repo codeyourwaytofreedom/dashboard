@@ -4,6 +4,7 @@ import { faPhoneFlip, faBedPulse, faBed} from '@fortawesome/free-solid-svg-icons
 import "./details.css";
 import Cell from './cell';
 import PercentageVisual from './percentagevisual';
+import Gauges from './gauges';
 const Details = ({details}) => {
     const gag = require("./gauge.png")
 
@@ -34,7 +35,7 @@ const Details = ({details}) => {
                                         </span>
                                         <span style={{width:"95%", height:"30px", backgroundColor:"crimson",
                                             textAlign:"start", color:"white", paddingLeft:"10px", opacity:"1", borderBottomRightRadius:"10px"}}>2021</span>
-                                        <span style={{width:"75%", height:"30px", backgroundColor:"black",
+                                        <span id='black' style={{width:"75%", height:"30px", backgroundColor:"black",
                                             textAlign:"start", color:"white", paddingLeft:"10px", opacity:"1", borderBottomRightRadius:"10px"}}>2022</span>
                                     </div>
                         }
@@ -59,30 +60,8 @@ const Details = ({details}) => {
 
                 {
                     details === "visitors" &&
+                        <Gauges back_im={gag}/>
 
-                    <div className='gauges'>
-                        <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
-                            <img src={require("./needle.png")} alt="needle" id='gauge1' />
-                            <div className='data'>
-                                    <span className='span_top' style={{color:"crimson"}}>Russian</span>
-                                    <span className='span_bottom' style={{color:"yellow"}}>7.865</span>                                
-                            </div>
-                        </div>
-                        <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
-                            <img src={require("./needle.png")} alt="needle" id='gauge2' />
-                            <div className='data'>
-                                    <span className='span_top' style={{color:"crimson"}}>Dutch</span>
-                                    <span style={{color:"yellow"}}>7.312</span>                                
-                            </div>
-                        </div>
-                        <div className='gauge' style={{backgroundImage:`url(${gag})`}}>
-                            <img src={require("./needle.png")} alt="needle" id='gauge3' />
-                            <div className='data'>
-                                    <span className='span_top' style={{color:"crimson"}}>British</span>
-                                    <span style={{color:"yellow"}}>6.990</span>                                
-                            </div>
-                        </div>
-                    </div>
                 }
 
                 {
